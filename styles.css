@@ -1,0 +1,211 @@
+/************************************************************
+*  Komplexe Übung PR3 -  Herbstsemester 2024                *
+*  Projektmanagent Tool - anzeigen, bearbeiten, hinzufügen  *
+*  Manuel Moritz                                            *
+*  1139499                                                  *
+************************************************************/
+
+/********************************************************
+*                    Globale Styles                     *
+********************************************************/
+
+* {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+}
+
+main {
+    margin-top: 40px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: slategray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px; 
+    font-weight: bold;
+}
+
+td {
+    height: 35px;
+}
+
+th {
+    text-align: left;
+}
+
+input {
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid black;
+}
+
+/********************************************************
+*                Styles für Projektliste                *
+********************************************************/
+
+#tabelle { 
+   margin: 0 auto;
+   width: 800px;
+   border-collapse: collapse;
+}
+
+.datum {
+    width: 150px;
+}
+
+.name {
+    width: 250px;
+}
+
+.verantwortlich {
+    width: 150px;
+}
+
+.beschreibung {
+    max-height: 75px;
+    overflow: scroll;
+    scrollbar-color: lightgrey white;
+}
+
+
+.liste:nth-child(2n) {
+    background-color: lightgrey;
+    border-top: 1px solid black;
+}
+
+.anzahl {
+    border-top: 1px solid black;
+    font-weight: 600;
+}
+
+.bearbeiten {
+    width: 70px;
+    text-align: center;
+}
+
+.bearbeiten form {
+    display: inline;
+}
+
+.bearbeiten input {
+    width: 22px;
+    font-weight: bold;
+}
+
+#aendern {
+    color: blue;
+}
+#hinzufuegen {
+    width: 20px;
+    color: rgb(0, 205, 0);
+    font-size: 15px;
+}
+
+.zurueck {
+        border: 1px solid rgba(0,0,0,0.5);
+        border-radius: 5px;
+        font-size: 15px;
+        background-color: white;
+        box-shadow: 2px 2px rgba(0,0,0,0.5);
+        display: inline;
+
+}
+
+.zurueck:hover {
+    border: 1px solid black;
+}
+
+.zurueck a {
+    padding: 3px;
+    color: black;
+    text-decoration: none;
+}
+
+/********************************************************
+* Styles für Projekt bearbeiten und hinzufügen Fenster  *
+********************************************************/
+.projektbearbeiten {
+    position: absolute;
+    top: 55px;
+    left: 40%;
+    width: 500px;
+    height: 370px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+    background-color: white;
+}
+
+.projektbearbeiten table {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.projektbearbeiten th {
+    width: 150px;
+}
+
+.projektbearbeiten textarea {
+    margin-top: 7px;
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 95%;
+    height: 150px;
+}
+
+.projektbearbeiten input[type="text"] {
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 95%;
+}
+
+.projektbearbeiten input[type="submit"] {
+    display: inline;
+    margin-top: 7px;
+    width: 45.5%;
+}
+
+.projektbearbeiten input[type="date"] {
+    width: 45.5%;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.projektbearbeiten div {
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 2px 2px rgba(0,0,0,0.5);
+    display: inline;
+    margin-left: 20px;
+    padding: 0 5px;
+}
+
+.projektbearbeiten div:hover {
+    border: 1px solid black;
+}
+
+.projektbearbeiten a {
+    color: red;
+    text-decoration: none;
+    font-size: 15px;
+}
