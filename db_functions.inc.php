@@ -1,6 +1,7 @@
 <?php
     /************************************************************
-    *  Komplexe Übung PR3 -  Herbstsemester 2024                *
+    *  Komplexe Übung PR3                                       *
+    *  Herbstsemester 2024                                      *
     *  Projektmanagent Tool - anzeigen, bearbeiten, hinzufügen  *
     *  Manuel Moritz                                            *
     *  1139499                                                  *
